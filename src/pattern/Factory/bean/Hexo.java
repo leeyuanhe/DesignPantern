@@ -1,44 +1,21 @@
 package pattern.Factory.bean;
 
-public class Hexo {
+public interface Hexo {
+
 
     /**
-     *英雄名称
+     *   喊口号
      */
-    private String name;
+    void speakSlogan();
 
     /**
-     *英雄类型
+     * 装配技能
      */
-    private String type;
+    void choseSkills();
 
 
-    public void  slogan(){
-        System.out.println("英雄的口号！");
-    }
-
-    public void addSkills(){
-        System.out.println("装配技能");
-    }
-
-    public void changeCloses(){
-        System.out.println("展示皮肤");
-    }
-
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getType() {
-        return type;
-    }
-
-    public void setType(String type) {
-        this.type = type;
-    }
+    /**
+     *  展示皮肤
+     */
+    void showClose();
 }
